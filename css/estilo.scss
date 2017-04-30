@@ -1,0 +1,20 @@
+$cor1: #1976d2;
+$cor2: #5c5757;
+
+nav{
+  background-color: $cor2 !important;
+
+}
+footer{
+  background-color: $cor2 !important;
+  img{
+    width: 30px !important;
+  }
+  .footer-copyright{
+    background-color: #5c5757 !important;
+  }
+  li{
+    display: inline !important;
+    padding-left: 15px;
+  }
+}

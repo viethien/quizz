@@ -1,0 +1,19 @@
+nav {
+  background-color: #5c5757 !important; }
+
+footer {
+  background-color: #5c5757 !important;
+  bottom: 0;
+  height: 100px;
+  left: 0;
+  position: absolute;
+  width: 100%; }
+  footer img {
+    width: 30px !important; }
+  footer .footer-copyright {
+    background-color: #5c5757 !important; }
+  footer li {
+    display: inline !important;
+    padding-left: 15px; }
+
+/*# sourceMappingURL=estilo.css.map */

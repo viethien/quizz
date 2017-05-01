@@ -10,7 +10,7 @@
    </head>
    <body>
       <?php include 'includes/nav.html'; ?>
-   <section class="container">
+   <section class="container" id="cPerguntas">
       <div class="row">
          <div class="col s12 m4 offset-m4">
            <div class="card ">
@@ -47,46 +47,52 @@
       </div>
    </section>
  <section class="container" id="equipes">
+   <div class="row" id="acoes">
+     <div class="col s12 m4 offset-m4 center">
+       <a id="acertar" class="btn-floating btn-small waves-effect waves-light green"><i class="material-icons">done</i></a>
+       <a id="passar" class="btn-floating btn-small waves-effect waves-light blue"><i class="material-icons">loop</i></a>
+       <a id="pagadesafio" class="btn-floating btn-small waves-effect waves-light yellow"><i class="material-icons">list</i></a>
+       <a id="errar" class="btn-floating btn-small waves-effect waves-light red"><i class="material-icons">error</i></a>
+     </div>
+   </div>
   <div class="row">
     <div class="col s12 m4 offset-m4">
       <div class="chip">
    <img src="img/yuna.jpg" alt="Equipe Um">
-Panteras
+   <text id="equipeum"></text>
  </div>
  <span>
      <div class="chip right">
        <img src="img/yuna.jpg" alt="Equipe Dois">
-         Negras
+         <text id="equipedois"></text>
 
 </div>
  </span>
     </div>
   </div>
+
   <div class="row">
     <div class="col s12 m4 offset-m4">
-      <div class="chip">
-        A:<span id="acertosum" class="acertos">1</span> E:<span id="errosum" class="erros"></span> D:<span id="desafiosum" class="desafios">1</span>
-    </div>
-    <span>
-      <div class="chip right">
-        A:<span id="acertosdois" class="acertos">1</span> E:<span id="errosdois" class="acertos"></span> D:<span id="desafiosdois" class="acertos">1</span>
-    </div>
+      <div class="btn-group">
+        <button class="green" id="acertosum"></button>
+        <button class="red" id="errosum"></button>
+        <button class="yellow" id="desafiosum"></button>
+      </div>
+    <span class="right">
+      <div class="btn-group">
+        <button class="green" id="acertosdois"></button>
+        <button class="red" id="errosdois"></button>
+        <button class="yellow" id="desafiosdois"></button>
+      </div>
     </span>
   </div>
 </div>
-  <div class="row" id="acoes">
-    <div class="col s12 m4 offset-m4 center">
-      <a id="acertar" class="btn-floating btn-small waves-effect waves-light green"><i class="material-icons">done</i></a>
-      <a id="passar" class="btn-floating btn-small waves-effect waves-light blue"><i class="material-icons">loop</i></a>
-      <a id="desafio" class="btn-floating btn-small waves-effect waves-light yellow"><i class="material-icons">list</i></a>
-      <a id="errar" class="btn-floating btn-small waves-effect waves-light red"><i class="material-icons">error</i></a>
 
-    </div>
-  </div>
  </section>
  <script src="js/jquery.min.js"></script>
  <script src="js/materialize.min.js"></script>
- <script src="js/navegacao.js"></script>
+ <script src="js/ClasseEquipe.js"></script>
+ <script src="js/main.js"></script>
 
    </body>
 </html>

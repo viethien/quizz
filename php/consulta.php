@@ -3,20 +3,10 @@ header('Content-Type: application/json');
 
 $dificuldade = $_GET ['dificuldade'];//Define a dificuldade das perguntas que seram selecionadas
 
-$numquestions = $_GET ['rodada'];//Número de perguntas que serão retornadas
+$numquestions = $_GET ['numquestions'];//Número de perguntas que serão retornadas
 
 
-switch ($numquestions) {
-    case '1':
-    $numquestions = "10";
-    break;
-    case '2':
-    $numquestions = "15";
-    break;
-    case '3':
-    $numquestions = "20";
-    break;
-}
+
 try{
     $conexao = new PDO ("mysql:host=localhost; dbname=teocratico; charset=utf8","root","");
 } catch (PDOException $erro){

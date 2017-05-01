@@ -2,12 +2,7 @@ nav {
   background-color: #5c5757 !important; }
 
 footer {
-  background-color: #5c5757 !important;
-  bottom: 0;
-  height: 100px;
-  left: 0;
-  position: absolute;
-  width: 100%; }
+  background-color: #5c5757 !important; }
   footer img {
     width: 30px !important; }
   footer .footer-copyright {
@@ -15,5 +10,40 @@ footer {
   footer li {
     display: inline !important;
     padding-left: 15px; }
+
+#cPerguntas .card p {
+  padding: 0px !important; }
+#cPerguntas .card:first-child, #cPerguntas .card:first-child .card:last-child {
+  padding-top: 10px !important;
+  margin-top: 10px !important;
+  margin-bottom: 0px !important;
+  padding-bottom: 0px !important; }
+  #cPerguntas .card:first-child .card:last-child {
+    padding-top: 0px !important;
+    margin-top: 0px !important; }
+
+.btn-group {
+  border-radius: 12px; }
+  .btn-group button {
+    height: 2em;
+    border: 0px;
+    color: white;
+    /* White text */
+    padding: 0px 10px;
+    /* Some padding */
+    cursor: none;
+    /* Pointer/hand icon */
+    float: left;
+    /* Float the buttons side by side */ }
+    .btn-group button:last-child {
+      border-top-right-radius: 12px;
+      border-bottom-right-radius: 12px; }
+    .btn-group button:first-child {
+      border-top-left-radius: 12px;
+      border-bottom-left-radius: 12px; }
+
+.btn-floating {
+  padding-top: 0px !important;
+  margin-top: 0px !important; }
 
 /*# sourceMappingURL=estilo.css.map */
